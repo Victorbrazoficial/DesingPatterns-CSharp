@@ -8,6 +8,9 @@ namespace Strategy.Investimentos
     {
         public double Caulcula(Conta saldo)
         {
+            if (saldo.Saldo <= 0)
+                throw new ArgumentException("Saldo menor ou igual a 0.", nameof(saldo));
+
             return (saldo.Saldo * 0.008);
         }
     }

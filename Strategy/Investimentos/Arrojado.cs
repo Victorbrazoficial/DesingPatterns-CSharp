@@ -6,21 +6,23 @@ namespace Strategy.Investimentos
 {
     public class Arrojado : IInvestimento
     {
+        public int Random { get; private set; }
         public double Caulcula(Conta saldo)
         {
-            
-            int _escolhido = new Random().Next(101);
+            if (saldo.Saldo <= 0 )
+                throw new ArgumentException("Saldo menor ou igual a 0.", nameof (saldo));
 
-            Console.WriteLine(_escolhido);
+            Random = new Random().Next(101);
+            Console.WriteLine(Random);
 
-            if (_escolhido <= 20)
+            if (Random <= 20)
             {
                 return (saldo.Saldo * 0.05);
 
             }
             else
             {
-                if ((_escolhido > 20) && (_escolhido <= 30))
+                if ((Random > 20) && (Random <= 30))
                 {
                     return (saldo.Saldo * 0.03);
                 }

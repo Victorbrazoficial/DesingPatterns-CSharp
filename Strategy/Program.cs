@@ -24,30 +24,30 @@ namespace Strategy
             RealizadorDeInvestimento realizadorDeInvestimento = new RealizadorDeInvestimento();
             CalculadorDeImposto calculador = new CalculadorDeImposto();
 
-            Console.WriteLine("Arrojado");
-            realizadorDeInvestimento.RealizaInvestimento(conta,arrojado);
+            Console.WriteLine("Investidor Arrojado");
+            realizadorDeInvestimento.RealizaInvestimento(conta,arrojado,realizadorDeInvestimento);
 
-            Console.WriteLine("Moderado");
-            realizadorDeInvestimento.RealizaInvestimento(conta,moderado);
+            Console.WriteLine("Investidor Moderado");
+            realizadorDeInvestimento.RealizaInvestimento(conta,moderado,realizadorDeInvestimento);
 
-            Console.WriteLine("Conservador");
-            realizadorDeInvestimento.RealizaInvestimento(conta,conservador);
+            Console.WriteLine("Investidor Conservador");
+            realizadorDeInvestimento.RealizaInvestimento(conta,conservador,realizadorDeInvestimento);
 
             Console.WriteLine();
             Console.WriteLine("-----//-----//-----");
             Console.WriteLine();
             
-            Console.WriteLine("ICMS:");
-            calculador.RealizaCalculo(orcamento, icms);
+            //Console.WriteLine("ICMS:");
+            //calculador.RealizaCalculo(orcamento, icms);
 
-            Console.WriteLine("ISS:");
-            calculador.RealizaCalculo(orcamento, iss);
+            //Console.WriteLine("ISS:");
+            //calculador.RealizaCalculo(orcamento, iss);
 
-            Console.WriteLine("IR:");
-            calculador.RealizaCalculo(orcamento, ir);
+            //Console.WriteLine("IR:");
+            //calculador.RealizaCalculo(orcamento, ir);
 
-            Console.WriteLine("ICCC:");
-            calculador.RealizaCalculo(orcamento, iccc);
+            //Console.WriteLine("ICCC:");
+            //calculador.RealizaCalculo(orcamento, iccc);
         }
     }
 }
