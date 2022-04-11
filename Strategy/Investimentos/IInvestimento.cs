@@ -2,6 +2,6 @@
 {
     public interface IInvestimento
     {
-        public double Caulcula(Conta saldo);
+        public double Calcula(Conta saldo);
     }
 }

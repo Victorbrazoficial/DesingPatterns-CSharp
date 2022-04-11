@@ -1,4 +1,5 @@
-﻿using Strategy.Investimentos;
+﻿using Strategy.Excpetions;
+using Strategy.Investimentos;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -24,35 +25,27 @@ namespace Strategy_Test
         }
 
         [Fact]
-        public void Deposita_ValorNegativoNoSaldoDaConta_Falied()
+        public void Deposita_ValorNegativoNoSaldoDaConta_RetornaExceptionSucesso()
         {
             //Arrange
             Conta conta = new Conta();
-            var deposito = -1000;
 
             //Act
-            conta.Deposita(-1000);
-            double result = conta.Saldo;
 
             //Assert
-            Assert.Equal(deposito, result);
+            Assert.Throws<ParametroNegativoException>(() => conta.Deposita(-1000));
         }
 
         [Fact]
-        public void Deposita_ValorZeraNoSaldoDaConta_Falied()
+        public void Deposita_ValorZeraNoSaldoDaConta_RetornaExceptionSucesso()
         {
             //Arrange
             Conta conta = new Conta();
-            var deposito = 0;
 
             //Act
-            conta.Deposita(0);
-            double result = conta.Saldo;
-
-            //Assert
-            Assert.Equal(deposito, result);
+           
+            //Assert         
+            Assert.Throws<ParametroZeradoException>(() => conta.Deposita(0));
         }
-
-
     }
 }

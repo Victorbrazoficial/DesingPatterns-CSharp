@@ -13,7 +13,7 @@ namespace Strategy.Investimentos
         {
             _escolhido = new Random().Next(101) > 50;
         }
-        public double Caulcula(Conta saldo)
+        public double Calcula(Conta saldo)
         {
             
             Console.WriteLine(_escolhido);

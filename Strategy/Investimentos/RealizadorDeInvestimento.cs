@@ -6,22 +6,22 @@ namespace Strategy.Investimentos
 {
     public class RealizadorDeInvestimento
     {
-        public double Lucro { get; private set; } 
+        //public double Lucro { get; private set; } 
 
-        public void RealizaInvestimento(Conta conta, IInvestimento investimento, RealizadorDeInvestimento realizadorDeInvestimentos)
+        public void RealizaInvestimento(Conta conta, IInvestimento investimento)
         {
             IImpostoSobreLucro ir = new IR();
             
-            Lucro += investimento.Caulcula(conta);
-            Console.WriteLine("Lucro sem imposto: " + Lucro);
+            conta.Lucro += investimento.Calcula(conta);
+            Console.WriteLine("Lucro sem imposto: " + conta.Lucro);
             
-            double imposto = ir.Calcula(realizadorDeInvestimentos);
+            double imposto = ir.Calcula(conta);
             Console.WriteLine("Valor do imposto sobre o lucro: " + imposto);
 
-            Lucro -= imposto;
-            Console.WriteLine("Valor do Lucro - Imposto : " + Lucro);
+            conta.Lucro -= imposto;
+            Console.WriteLine("Valor do Lucro - Imposto : " + conta.Lucro);
             
-            conta.Deposita(Lucro);
+            conta.Deposita(conta.Lucro);
             Console.WriteLine("Novo Saldo: " + conta.Saldo);
         }
 

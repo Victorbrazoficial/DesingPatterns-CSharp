@@ -7,9 +7,9 @@ namespace Strategy
 {
     public class IR : IImposto, IImpostoSobreLucro
     {
-        public double Calcula(RealizadorDeInvestimento realizadorDeInvestimento)
+        public double Calcula(Conta conta)
         {
-            return realizadorDeInvestimento.Lucro * 0.25;
+            return conta.Lucro * 0.25;
         }
 
         public double Calcular(Orcamento orcamento)

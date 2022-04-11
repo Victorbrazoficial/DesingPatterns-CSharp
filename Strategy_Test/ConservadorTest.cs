@@ -1,7 +1,5 @@
-﻿using Strategy.Investimentos;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Strategy.Excpetions;
+using Strategy.Investimentos;
 using Xunit;
 
 namespace Strategy_Test
@@ -18,7 +16,7 @@ namespace Strategy_Test
 
             //Act
             conta.Deposita(1000);
-            var calculoInvestimento = conservardor.Caulcula(conta);
+            var calculoInvestimento = conservardor.Calcula(conta);
 
             //Assert
             Assert.Equal(result, calculoInvestimento);
@@ -26,35 +24,29 @@ namespace Strategy_Test
         }
 
         [Fact]
-        public void CalculaInvestimento_SobreOValorDoSaldoZerado_RetornaLucroComFalied()
+        public void CalculaInvestimento_SobreOValorDoSaldoZerado_RetornaExceptionSucesso()
         {
             //Arrange
             Conta conta = new Conta();
             Conservardor conservardor = new Conservardor();
-            var result = 0;
 
             //Act
-            conta.Deposita(0);
-            var calculoInvestimento = conservardor.Caulcula(conta);
 
             //Assert
-            Assert.Equal(result, calculoInvestimento);
+            Assert.Throws<SaldoZeradoException>(() => conservardor.Calcula(conta));
         }
 
         [Fact]
-        public void CalculaInvestimento_SobreOValorDoSaldoNegativo_RetornaLucroComFalied()
+        public void CalculaInvestimento_SobreOValorDoSaldoNegativo_RetornaExceptionSucesso()
         {
             //Arrange
-            Conta conta = new Conta();
+            Conta conta = new Conta(-100);
             Conservardor conservardor = new Conservardor();
-            var result = -8;
 
             //Act
-            conta.Deposita(-1000);
-            var calculoInvestimento = conservardor.Caulcula(conta);
 
             //Assert
-            Assert.Equal(result, calculoInvestimento);
+            Assert.Throws<SaldoNegativoException>(() => conservardor.Calcula(conta));
         }
     }
 }

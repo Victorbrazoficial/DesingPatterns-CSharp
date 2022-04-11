@@ -17,25 +17,25 @@ namespace Strategy
             IInvestimento conservador = new Conservardor();
             IInvestimento moderado = new Moderado();
 
-            Conta conta = new Conta();
-            conta.Deposita(1000);
-            Orcamento orcamento = new Orcamento(1000);
+            Conta conta = new Conta(-1);
+            //conta.Deposita(1000);
+            Orcamento orcamento = new Orcamento(000);
 
             RealizadorDeInvestimento realizadorDeInvestimento = new RealizadorDeInvestimento();
             CalculadorDeImposto calculador = new CalculadorDeImposto();
 
             Console.WriteLine("Investidor Arrojado");
-            realizadorDeInvestimento.RealizaInvestimento(conta,arrojado,realizadorDeInvestimento);
+            realizadorDeInvestimento.RealizaInvestimento(conta,arrojado);
 
-            Console.WriteLine("Investidor Moderado");
-            realizadorDeInvestimento.RealizaInvestimento(conta,moderado,realizadorDeInvestimento);
+            //Console.WriteLine("Investidor Moderado");
+            //realizadorDeInvestimento.RealizaInvestimento(conta,moderado);
 
-            Console.WriteLine("Investidor Conservador");
-            realizadorDeInvestimento.RealizaInvestimento(conta,conservador,realizadorDeInvestimento);
+            //Console.WriteLine("Investidor Conservador");
+            //realizadorDeInvestimento.RealizaInvestimento(conta,conservador);
 
-            Console.WriteLine();
-            Console.WriteLine("-----//-----//-----");
-            Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine("-----//-----//-----");
+            //Console.WriteLine();
             
             //Console.WriteLine("ICMS:");
             //calculador.RealizaCalculo(orcamento, icms);
