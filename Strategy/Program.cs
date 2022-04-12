@@ -17,7 +17,7 @@ namespace Strategy
             IInvestimento conservador = new Conservardor();
             IInvestimento moderado = new Moderado();
 
-            Conta conta = new Conta(-1);
+            Conta conta = new Conta(1000);
             //conta.Deposita(1000);
             Orcamento orcamento = new Orcamento(000);
 
@@ -25,7 +25,7 @@ namespace Strategy
             CalculadorDeImposto calculador = new CalculadorDeImposto();
 
             Console.WriteLine("Investidor Arrojado");
-            realizadorDeInvestimento.RealizaInvestimento(conta,arrojado);
+            realizadorDeInvestimento.RealizaCalculoInvestimento(conta,arrojado);
 
             //Console.WriteLine("Investidor Moderado");
             //realizadorDeInvestimento.RealizaInvestimento(conta,moderado);

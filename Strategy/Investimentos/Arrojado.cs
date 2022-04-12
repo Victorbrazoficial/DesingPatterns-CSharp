@@ -8,21 +8,26 @@ namespace Strategy.Investimentos
     public class Arrojado : IInvestimento
     {
         public int Random { get; private set; }
+
+        public Arrojado(int random)
+        {
+            Random = random;
+            if (Random < 0)
+                throw new NumeroRandomNegativoException(random);
+        }
+
+        public Arrojado()
+        {   
+            Random = new Random().Next(101);
+            
+            Console.WriteLine(Random);
+        }
+
         public double Calcula(Conta saldo)
         {
-            if (saldo.Saldo < 0 )
-                throw new SaldoNegativoException(saldo.Saldo);
-
-            if (saldo.Saldo == 0)
-                throw new SaldoZeradoException(saldo.Saldo);
-
-            Random = new Random().Next(101);
-            Console.WriteLine(Random);
-
             if (Random <= 20)
             {
                 return (saldo.Saldo * 0.05);
-
             }
             else
             {

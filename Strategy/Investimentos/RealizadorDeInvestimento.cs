@@ -8,7 +8,7 @@ namespace Strategy.Investimentos
     {
         //public double Lucro { get; private set; } 
 
-        public void RealizaInvestimento(Conta conta, IInvestimento investimento)
+        public double RealizaCalculoInvestimento(Conta conta, IInvestimento investimento)
         {
             IImpostoSobreLucro ir = new IR();
             
@@ -18,11 +18,16 @@ namespace Strategy.Investimentos
             double imposto = ir.Calcula(conta);
             Console.WriteLine("Valor do imposto sobre o lucro: " + imposto);
 
+            Console.WriteLine("Imposto arrecadado = " + conta.Imposto);
+
             conta.Lucro -= imposto;
             Console.WriteLine("Valor do Lucro - Imposto : " + conta.Lucro);
             
             conta.Deposita(conta.Lucro);
             Console.WriteLine("Novo Saldo: " + conta.Saldo);
+            Console.WriteLine("Novo Lucro: " + conta.Lucro);
+
+            return conta.Lucro;
         }
 
     }

@@ -7,6 +7,7 @@ namespace Strategy
 {
     public interface IImpostoSobreLucro
     {
-        public double Calcula(Conta conta);
+        public double CalculaImpostoSobreSaldo(Conta conta);
+        double Calcula(Conta conta);
     }
 }
