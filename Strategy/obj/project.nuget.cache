@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l9x2GD7wH7k8w3HMsLRUcQdDsFUOLCfTY4P+6R+mFvnQDO1whWNxLXdV7xBMCvfYyKB80dcY4/2G5MDb8hjnzw==",
+  "dgSpecHash": "wQBWDT3SmLKrac3U2ff+FnD9ukSHzNY+JaYzs24iErWJT18FpIdi0gXVuMbANk3SLnc/BuwbauE20wUr144w3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\victorhda\\Strategy\\Strategy\\Strategy.csproj",
+  "projectFilePath": "C:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

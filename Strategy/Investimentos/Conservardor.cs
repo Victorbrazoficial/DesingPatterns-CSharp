@@ -9,7 +9,7 @@ namespace Strategy.Investimentos
     {
         public double Calcula(Conta saldo)
         {
-            return (saldo.Lucro * 0.008);
+            return (saldo.Saldo * 0.008);
         }
     }
 }
