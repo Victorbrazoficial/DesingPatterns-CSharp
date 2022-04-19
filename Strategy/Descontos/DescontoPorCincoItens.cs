@@ -10,7 +10,7 @@ namespace Strategy.Descontos
             if (orcamento.Itens.Count >= 5 )
             {
                 Console.WriteLine("Desconto mais de 5 itens");
-                return orcamento.Valor * 0.1;
+                return orcamento.ValorTotalDosItens * 0.1;
             }
 
             return Proximo.Desconta(orcamento);

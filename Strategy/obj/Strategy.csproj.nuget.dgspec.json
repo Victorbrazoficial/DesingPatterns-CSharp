@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj": {}
+    "C:\\Users\\victorhda\\DesingPatterns-CSharp\\strategy\\Strategy.csproj": {}
   },
   "projects": {
-    "c:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj": {
+    "C:\\Users\\victorhda\\DesingPatterns-CSharp\\strategy\\Strategy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj",
+        "projectUniqueName": "C:\\Users\\victorhda\\DesingPatterns-CSharp\\strategy\\Strategy.csproj",
         "projectName": "Strategy",
-        "projectPath": "c:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj",
+        "projectPath": "C:\\Users\\victorhda\\DesingPatterns-CSharp\\strategy\\Strategy.csproj",
         "packagesPath": "C:\\Users\\victorhda\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\obj\\",
+        "outputPath": "C:\\Users\\victorhda\\DesingPatterns-CSharp\\strategy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\victorhda\\AppData\\Roaming\\NuGet\\NuGet.Config"

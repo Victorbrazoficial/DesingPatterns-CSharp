@@ -17,8 +17,7 @@ namespace Strategy
 
         public Orcamento()
         {
-            Itens = new List<Item>();
-            
+            Itens = new List<Item>();     
         }
 
         public Orcamento(double valor)

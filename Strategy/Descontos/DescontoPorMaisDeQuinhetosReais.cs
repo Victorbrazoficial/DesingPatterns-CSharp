@@ -11,7 +11,7 @@ namespace Strategy.Descontos
             if (orcamento.Valor >= 500)
             {
                 Console.WriteLine("Desconto mais de 500 reais;");
-                return orcamento.Valor * 0.1;
+                return orcamento.Valor * 0.07;
             }
 
             return Proximo.Desconta(orcamento);

@@ -1,4 +1,5 @@
-﻿using Strategy.Descontos;
+﻿
+using Strategy.Descontos;
 using Strategy.Investimentos;
 using System;
 
@@ -28,28 +29,55 @@ namespace Strategy
             // Console.WriteLine("Investidor Arrojado");
             // realizadorDeInvestimento.RealizaCalculoInvestimento(conta,arrojado);
 
+
+
+
+
+
+
             Orcamento orcamento = new Orcamento(500);
 
-            Item item = new Item("Caderno", 250); 
-            Item item1 = new Item("Lapis", 1.0); 
-            // Item item2 = new Item("Papel", 250); 
-            // Item item3 = new Item("Toalha", 1.0); 
-            // Item item4 = new Item("Pincel", 1.0); 
+            Item item = new Item("CANET", 250); 
+            Item item1 = new Item("LAPIS", 250); 
+            Item item2 = new Item("Papel", 250); 
+            Item item3 = new Item("Toalha", 250); 
+            //Item item4 = new Item("Pincel", 0.0); 
             // Item item5 = new Item("Pin444cel", 1.0); 
 
-            Console.WriteLine("Lista de ITENS");
+            //Console.WriteLine("Lista de ITENS");
+
             orcamento.AdicionaItem(item);
             orcamento.AdicionaItem(item1);
-            // orcamento.AdicionaItem(item2);
-            // orcamento.AdicionaItem(item3);
-            // orcamento.AdicionaItem(item4);
+            orcamento.AdicionaItem(item2);
+            orcamento.AdicionaItem(item3);
+            //orcamento.AdicionaItem(item4);
             // orcamento.AdicionaItem(item5);
-            Console.WriteLine(orcamento.Itens[1].Nome);
-            Console.WriteLine(orcamento.Itens[1].Valor);
 
+            //Console.WriteLine(orcamento.Itens[1].Nome);
+            //Console.WriteLine(orcamento.Itens[0].Nome);
 
             CalculadorDeDescontos calculador = new CalculadorDeDescontos();
             calculador.Calcula(orcamento);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // foreach (Item item9 in orcamento.Itens)
+            // {
+            //     orcamento.ValorTotalDosItens += item9.Valor;
+            // }
+                // Console.WriteLine(orcamento.ValorTotalDosItens);
+
 
             //Console.WriteLine(item.Nome);
 

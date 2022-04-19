@@ -11,9 +11,17 @@ namespace Strategy.Investimentos
 
         public double Imposto { get; set; }
 
+        public string Titular { get; private set; }
+
         public Conta()
         {
           
+        }
+
+         public Conta(string titular, double saldo)
+        {
+            Titular = titular;
+            Saldo = saldo;
         }
 
         public Conta(double saldo)
