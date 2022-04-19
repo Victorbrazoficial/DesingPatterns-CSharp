@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj": {}
+    "c:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj": {
+    "c:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj",
+        "projectUniqueName": "c:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj",
         "projectName": "Strategy",
-        "projectPath": "C:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj",
+        "projectPath": "c:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\Strategy.csproj",
         "packagesPath": "C:\\Users\\victorhda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\obj\\",
+        "outputPath": "c:\\Users\\victorhda\\DesingPatterns-CSharp\\Strategy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\victorhda\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -50,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

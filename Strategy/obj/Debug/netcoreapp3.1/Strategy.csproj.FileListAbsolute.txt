@@ -18,10 +18,11 @@ c:\Users\victorhda\DesingPatterns-CSharp\Strategy\bin\Debug\netcoreapp3.1\Strate
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy\bin\Debug\netcoreapp3.1\Strategy.runtimeconfig.dev.json
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy\bin\Debug\netcoreapp3.1\Strategy.dll
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy\bin\Debug\netcoreapp3.1\Strategy.pdb
-c:\Users\victorhda\DesingPatterns-CSharp\Strategy\obj\Debug\netcoreapp3.1\Strategy.csprojAssemblyReference.cache
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy\obj\Debug\netcoreapp3.1\Strategy.AssemblyInfoInputs.cache
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy\obj\Debug\netcoreapp3.1\Strategy.AssemblyInfo.cs
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy\obj\Debug\netcoreapp3.1\Strategy.csproj.CoreCompileInputs.cache
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy\obj\Debug\netcoreapp3.1\Strategy.dll
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy\obj\Debug\netcoreapp3.1\Strategy.pdb
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy\obj\Debug\netcoreapp3.1\Strategy.genruntimeconfig.cache
+c:\Users\victorhda\DesingPatterns-CSharp\Strategy\obj\Debug\netcoreapp3.1\Strategy.csproj.AssemblyReference.cache
+c:\Users\victorhda\DesingPatterns-CSharp\Strategy\obj\Debug\netcoreapp3.1\Strategy.GeneratedMSBuildEditorConfig.editorconfig

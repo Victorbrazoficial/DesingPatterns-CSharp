@@ -192,7 +192,6 @@ c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\bin\Debug\netcoreapp3.1\z
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\bin\Debug\netcoreapp3.1\Strategy.dll
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\bin\Debug\netcoreapp3.1\Strategy.pdb
-c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\obj\Debug\netcoreapp3.1\Strategy_Test.csprojAssemblyReference.cache
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\obj\Debug\netcoreapp3.1\Strategy_Test.AssemblyInfoInputs.cache
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\obj\Debug\netcoreapp3.1\Strategy_Test.AssemblyInfo.cs
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\obj\Debug\netcoreapp3.1\Strategy_Test.csproj.CoreCompileInputs.cache
@@ -200,3 +199,8 @@ c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\obj\Debug\netcoreapp3.1\S
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\obj\Debug\netcoreapp3.1\Strategy_Test.dll
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\obj\Debug\netcoreapp3.1\Strategy_Test.pdb
 c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\obj\Debug\netcoreapp3.1\Strategy_Test.genruntimeconfig.cache
+c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\bin\Debug\netcoreapp3.1\Strategy.deps.json
+c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\bin\Debug\netcoreapp3.1\Strategy.runtimeconfig.json
+c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\bin\Debug\netcoreapp3.1\Strategy.runtimeconfig.dev.json
+c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\obj\Debug\netcoreapp3.1\Strategy_Test.csproj.AssemblyReference.cache
+c:\Users\victorhda\DesingPatterns-CSharp\Strategy_Test\obj\Debug\netcoreapp3.1\Strategy_Test.GeneratedMSBuildEditorConfig.editorconfig
